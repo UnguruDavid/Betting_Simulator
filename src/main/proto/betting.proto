@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option java_package = "org.example.grpc";
+option java_outer_classname = "BettingProto";
+
+service BettingService {
+  rpc OfferBet (BetRequest) returns (BetResponse);
+  rpc PlaceBet (PlaceBetRequest) returns (PlaceBetResponse);
+  rpc CheckOutcome (CheckOutcomeRequest) returns (CheckOutcomeResponse);
+}
+
+message BetRequest {
+  string name = 1;
+  string event = 2;
+  string oddsA = 3;
+  string oddsDraw = 4;
+  string oddsB = 5;
+  double maxSum = 6;
+}
+
+message BetResponse {
+  string message = 1;
+}
+
+message PlaceBetRequest {
+  string bettorName = 1;
+  string event = 2;
+  string outcome = 3;
+  string amount = 4;
+}
+
+message PlaceBetResponse {
+  string message = 1;
+}
+
+message CheckOutcomeRequest {
+  string event = 1;
+  string outcome = 2;
+  string amount = 3;
+}
+
+message CheckOutcomeResponse {
+  string message = 1;
+}
