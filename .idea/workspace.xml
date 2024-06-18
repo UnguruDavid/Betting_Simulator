@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc2bea5-18dc-44fa-a879-a0f9afc65f10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NewsPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SportsNewsFetcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/news-schema.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BettingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/BettingAlgorithmTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="package.json" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -38,6 +35,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BettingAlgorithm.executor": "Run",
+    "Application.BettingAlgorithmTest.executor": "Run",
     "Application.BettingClient.executor": "Run",
     "Application.BettingConsumer.executor": "Run",
     "Application.BookmakerPublisher.executor": "Run",
@@ -97,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718663646848</updated>
       <workItem from="1718663647920" duration="6268000" />
-      <workItem from="1718702089265" duration="12712000" />
+      <workItem from="1718702089265" duration="13375000" />
     </task>
     <servers />
   </component>
