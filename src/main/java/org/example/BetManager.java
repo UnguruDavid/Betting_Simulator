@@ -45,7 +45,7 @@ public class BetManager {
             String betKey = getMatchingBetKey(event, outcome);
             if (betKey != null) {
                 Bet bet = offeredBets.get(betKey);
-                if (Double.parseDouble(amount) <= bet.maxSum) {
+                if (Double.parseDouble(amount) <= bet.getMaxSum()) {
                     String betDetails = String.format("Bettor: %s, Event: %s, Outcome: %s, Amount: %s", bettorName, event, outcome, amount);
                     placedBets.computeIfAbsent(bettorName, k -> new ArrayList<>()).add(betDetails);
                     out.println("HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nBet placed successfully!");
@@ -88,7 +88,7 @@ public class BetManager {
     private static String getMatchingBetKey(String event, String outcome) {
         for (Map.Entry<String, Bet> entry : offeredBets.entrySet()) {
             Bet bet = entry.getValue();
-            if (bet.event.equals(event)) {
+            if (bet.getEvent().equals(event)) {
                 return entry.getKey();
             }
         }
@@ -98,11 +98,11 @@ public class BetManager {
     private static double getOddsByOutcome(Bet bet, int outcome) {
         switch (outcome) {
             case 0:
-                return Double.parseDouble(bet.oddsDraw);
+                return Double.parseDouble(bet.getOddsDraw());
             case 1:
-                return Double.parseDouble(bet.oddsA);
+                return Double.parseDouble(bet.getOddsA());
             case 2:
-                return Double.parseDouble(bet.oddsB);
+                return Double.parseDouble(bet.getOddsB());
             default:
                 return 0;
         }

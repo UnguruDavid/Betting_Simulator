@@ -1,12 +1,12 @@
 package org.example;
 
 public class Bet {
-    String name;
-    String event;
-    String oddsA;
-    String oddsDraw;
-    String oddsB;
-    double maxSum;
+    public final String name;
+    public final String event;
+    public final String oddsA;
+    public final String oddsDraw;
+    public final String oddsB;
+    public final double maxSum;
 
     public Bet(String name, String event, String oddsA, String oddsDraw, String oddsB, double maxSum) {
         this.name = name;
@@ -15,5 +15,29 @@ public class Bet {
         this.oddsDraw = oddsDraw;
         this.oddsB = oddsB;
         this.maxSum = maxSum;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEvent() {
+        return event;
+    }
+
+    public String getOddsA() {
+        return oddsA;
+    }
+
+    public String getOddsDraw() {
+        return oddsDraw;
+    }
+
+    public String getOddsB() {
+        return oddsB;
+    }
+
+    public double getMaxSum() {
+        return maxSum;
     }
 }

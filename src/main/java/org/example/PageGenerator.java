@@ -89,12 +89,12 @@ public class PageGenerator {
                 + "<h1>Offered Bets</h1>"
                 + "<ul>");
         for (Bet bet : BetManager.getOfferedBets().values()) {
-            response.append("<li>").append("Event: ").append(bet.event)
+            response.append("<li>").append("Event: ").append(bet.getEvent())
                     .append(", Odds: [")
-                    .append(bet.oddsA).append(", ")
-                    .append(bet.oddsDraw).append(", ")
-                    .append(bet.oddsB).append("], Max Sum: ")
-                    .append(bet.maxSum).append("</li>");
+                    .append(bet.getOddsA()).append(", ")
+                    .append(bet.getOddsDraw()).append(", ")
+                    .append(bet.getOddsB()).append("], Max Sum: ")
+                    .append(bet.getMaxSum()).append("</li>");
         }
         response.append("</ul>")
                 .append("</body></html>");
