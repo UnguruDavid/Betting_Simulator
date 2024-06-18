@@ -1,12 +1,12 @@
 package org.example;
 
 public class Bet {
-    public final String name;
-    public final String event;
-    public final String oddsA;
-    public final String oddsDraw;
-    public final String oddsB;
-    public final double maxSum;
+    public String name;
+    public String event;
+    public String oddsA;
+    public String oddsDraw;
+    public String oddsB;
+    public double maxSum;
 
     public Bet(String name, String event, String oddsA, String oddsDraw, String oddsB, double maxSum) {
         this.name = name;

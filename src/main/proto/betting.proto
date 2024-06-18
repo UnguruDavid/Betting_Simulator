@@ -7,17 +7,17 @@ service BettingService {
   rpc OfferBet (BetRequest) returns (BetResponse);
   rpc PlaceBet (PlaceBetRequest) returns (PlaceBetResponse);
   rpc CheckOutcome (CheckOutcomeRequest) returns (CheckOutcomeResponse);
-  // Add more services as needed
+  rpc ListBets (Empty) returns (ListBetsResponse);
+  rpc RemoveBet (RemoveBetRequest) returns (RemoveBetResponse);
 }
 
 message BetRequest {
-  string bookmakerId = 1;  // New field to identify the bookmaker
-  string name = 2;
-  string event = 3;
-  string oddsA = 4;
-  string oddsDraw = 5;
-  string oddsB = 6;
-  double maxSum = 7;
+  string name = 1;
+  string event = 2;
+  string oddsA = 3;
+  string oddsDraw = 4;
+  string oddsB = 5;
+  double maxSum = 6;
 }
 
 message BetResponse {
@@ -42,5 +42,19 @@ message CheckOutcomeRequest {
 }
 
 message CheckOutcomeResponse {
+  string message = 1;
+}
+
+message Empty {}
+
+message ListBetsResponse {
+  repeated BetRequest bets = 1;
+}
+
+message RemoveBetRequest {
+  string event = 1;
+}
+
+message RemoveBetResponse {
   string message = 1;
 }

@@ -26,4 +26,4 @@ public class BetManagerBenchmark {
         BetManager.handleBettorPost(requestBodyBettor, new PrintWriter(new StringWriter()));
     }
 }
-set PATH=%PATH%;C:\JMeter\apache-jmeter-5.6.3\bin
+
