@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc2bea5-18dc-44fa-a879-a0f9afc65f10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BettingConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BookmakerPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NewsPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SportsNewsFetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/news-schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -21,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -41,7 +42,9 @@
     "Application.BettingConsumer.executor": "Run",
     "Application.BookmakerPublisher.executor": "Run",
     "Application.MainServer.executor": "Run",
+    "Application.NewsPublisher.executor": "Run",
     "Application.Server.executor": "Run",
+    "Application.SportsNewsFetcher.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -94,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718663646848</updated>
       <workItem from="1718663647920" duration="6268000" />
-      <workItem from="1718702089265" duration="7745000" />
+      <workItem from="1718702089265" duration="12712000" />
     </task>
     <servers />
   </component>
