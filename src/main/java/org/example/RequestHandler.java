@@ -9,6 +9,7 @@ import java.util.Map;
 public class RequestHandler implements Runnable {
     private Socket clientSocket;
 
+    // Constructor to initialize the client socket
     public RequestHandler(Socket clientSocket) {
         this.clientSocket = clientSocket;
     }
@@ -19,9 +20,11 @@ public class RequestHandler implements Runnable {
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true)
         ) {
+            // Read the request line from the client
             String requestLine = in.readLine();
             System.out.println("Request: " + requestLine);
 
+            // Handle the request based on its type (GET or POST)
             if (requestLine != null) {
                 if (requestLine.startsWith("GET")) {
                     handleGetRequest(requestLine, out);
@@ -42,6 +45,7 @@ public class RequestHandler implements Runnable {
         }
     }
 
+    // Method to handle GET requests
     private void handleGetRequest(String requestLine, PrintWriter out) {
         String response;
         if (requestLine.contains("/bettor")) {
@@ -58,20 +62,25 @@ public class RequestHandler implements Runnable {
         out.println(response);
     }
 
+    // Method to handle POST requests
     private void handlePostRequest(String requestLine, BufferedReader in, PrintWriter out) throws IOException {
         StringBuilder requestBody = new StringBuilder();
         String line;
         int contentLength = 0;
+
+        // Read the headers and extract the content length
         while (!(line = in.readLine()).isEmpty()) {
             if (line.startsWith("Content-Length:")) {
                 contentLength = Integer.parseInt(line.split(":")[1].trim());
             }
         }
 
+        // Read the request body
         char[] body = new char[contentLength];
         in.read(body, 0, contentLength);
         requestBody.append(body);
 
+        // Delegate the request to the appropriate handler in BetManager
         if (requestLine.contains("/bookmaker")) {
             BetManager.handleBookmakerPost(requestBody.toString(), out);
         } else if (requestLine.contains("/bettor")) {

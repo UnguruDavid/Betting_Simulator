@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc2bea5-18dc-44fa-a879-a0f9afc65f10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/grpc/BettingServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -16,9 +15,12 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Bet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Bet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BetManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PageGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/grpc/BettingClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/grpc/BettingClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/grpc/BettingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/grpc/BettingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/betting.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/betting.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BetManagerBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BetManagerBenchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/grpc/BettingServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/grpc/BettingServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,7 @@
   "keyToString": {
     "Application.BettingClient.executor": "Run",
     "Application.MainServer.executor": "Run",
+    "Application.Server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -75,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718663646848</updated>
-      <workItem from="1718663647920" duration="5314000" />
+      <workItem from="1718663647920" duration="6268000" />
     </task>
     <servers />
   </component>

@@ -15,6 +15,7 @@ public class BettingServiceImplTest {
     private static BettingServiceGrpc.BettingServiceBlockingStub blockingStub;
     private static BettingServiceGrpc.BettingServiceStub asyncStub;
 
+    // Setup method to initialize gRPC channel and stubs
     @BeforeAll
     public static void setUp() {
         channel = ManagedChannelBuilder.forAddress("localhost", 8080)
@@ -24,13 +25,16 @@ public class BettingServiceImplTest {
         asyncStub = BettingServiceGrpc.newStub(channel);
     }
 
+    // Tear down method to shut down the channel after all tests are done
     @AfterAll
     public static void tearDown() throws InterruptedException {
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     }
 
+    // Test method for offering a bet
     @Test
     public void testOfferBet() {
+        // Create a BetRequest object with test data
         BetRequest request = BetRequest.newBuilder()
                 .setName("Bookmaker1")
                 .setEvent("TeamA-TeamB")
@@ -40,7 +44,10 @@ public class BettingServiceImplTest {
                 .setMaxSum(1000)
                 .build();
 
+        // Send the request and get the response
         BetResponse response = blockingStub.offerBet(request);
+
+        // Assert that the response message is as expected
         assertEquals("Bet offered successfully by Bookmaker1", response.getMessage());
     }
 

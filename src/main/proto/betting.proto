@@ -8,7 +8,7 @@ service BettingService {
   rpc PlaceBet (PlaceBetRequest) returns (PlaceBetResponse);
   rpc CheckOutcome (CheckOutcomeRequest) returns (CheckOutcomeResponse);
   rpc ListBets (Empty) returns (ListBetsResponse);
-  rpc RemoveBet (RemoveBetRequest) returns (RemoveBetResponse);
+  rpc RemoveBet (RemoveBetRequest) returns (BetResponse);
 }
 
 message BetRequest {
@@ -53,8 +53,4 @@ message ListBetsResponse {
 
 message RemoveBetRequest {
   string event = 1;
-}
-
-message RemoveBetResponse {
-  string message = 1;
 }
