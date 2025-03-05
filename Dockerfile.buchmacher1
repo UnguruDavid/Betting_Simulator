@@ -1,0 +1,11 @@
+# Use a base image appropriate for your Java application
+FROM openjdk:11-jre-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the application's JAR file
+COPY target/buchmacher1.jar /app/buchmacher1.jar
+
+# Run the application
+CMD ["java", "-jar", "buchmacher1.jar"]

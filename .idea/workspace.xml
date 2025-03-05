@@ -5,9 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc2bea5-18dc-44fa-a879-a0f9afc65f10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/BettingAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/BettingAlgorithmTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.buchmacher1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.buchmacher2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Bet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Bet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BettingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BettingAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BettingConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BettingConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BookmakerPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BookmakerPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NewsPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/NewsPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/PageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/PageGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SportsNewsFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SportsNewsFetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/grpc/BettingClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/grpc/BettingClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/grpc/BettingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/grpc/BettingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/grpc/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/grpc/MainServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/betting.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/betting.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/news-schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/news-schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BetManagerBenchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BetManagerBenchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BetManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BetManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/BettingAlgorithmTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/BettingAlgorithmTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/PageGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/PageGeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/PerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/PerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/grpc/BettingServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/grpc/BettingServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +54,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -44,10 +77,16 @@
     "Application.NewsPublisher.executor": "Run",
     "Application.Server.executor": "Run",
     "Application.SportsNewsFetcher.executor": "Run",
+    "Docker.Dockerfile.buchmacher1.executor": "Run",
+    "Docker.Dockerfile.buchmacher2.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "JUnit.BettingServiceImplTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/e_tu5/Downloads/Java Copie",
+    "last_opened_file_path": "/Users/davidungureanu/Desktop/Java Copie",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,9 +95,15 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\e_tu5\Downloads\Java Copie" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="BookmakerPublisher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.BookmakerPublisher" />
@@ -82,8 +127,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
       </set>
     </attachedChunks>
   </component>
@@ -97,6 +142,16 @@
       <updated>1718663646848</updated>
       <workItem from="1718663647920" duration="6268000" />
       <workItem from="1718702089265" duration="13375000" />
+      <workItem from="1718719861620" duration="3693000" />
+      <workItem from="1718813871525" duration="2601000" />
+      <workItem from="1720124110003" duration="728000" />
+      <workItem from="1720618351965" duration="2742000" />
+      <workItem from="1720714270330" duration="3000000" />
+      <workItem from="1721231170122" duration="3340000" />
+      <workItem from="1722532458381" duration="945000" />
+      <workItem from="1722590299891" duration="648000" />
+      <workItem from="1722596012313" duration="733000" />
+      <workItem from="1741206810496" duration="331000" />
     </task>
     <servers />
   </component>

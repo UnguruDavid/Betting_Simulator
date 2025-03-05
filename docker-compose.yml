@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - buchmacher1
+      - buchmacher2
+
+  buchmacher1:
+    build:
+      context: .
+      dockerfile: Dockerfile.buchmacher1
+    ports:
+      - "8081:8080"
+
+  buchmacher2:
+    build:
+      context: .
+      dockerfile: Dockerfile.buchmacher2
+    ports:
+      - "8082:8080"
